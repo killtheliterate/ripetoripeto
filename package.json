@@ -8,6 +8,7 @@
     "build": "neutrino build",
     "test": "neutrino test"
   },
+  "jest": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/killtheliterate/ripetoripeto.git"
@@ -20,11 +21,21 @@
   "homepage": "https://github.com/killtheliterate/ripetoripeto#readme",
   "dependencies": {
     "neutrino": "^7.1.2",
-    "neutrino-preset-react": "^7.1.2"
+    "neutrino-middleware-eslint": "^7.1.2",
+    "neutrino-preset-react": "^7.1.2",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-hot-loader": "^3.1.1",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2"
   },
   "devDependencies": {
     "enzyme": "^3.1.0",
+    "enzyme-adapter-react-16": "^1.0.1",
+    "jest-enzyme": "^4.0.1",
     "neutrino-preset-jest": "^7.1.2",
-    "neutrino-preset-node": "^7.1.2"
+    "neutrino-preset-node": "^7.1.2",
+    "react-addons-test-utils": "^15.6.2",
+    "react-test-renderer": "^16.0.0"
   }
 }
