@@ -1,0 +1,23 @@
+{
+  "name": "ripetoripeto",
+  "version": "1.0.0-alpha-1",
+  "description": "A UI For repeaterbook.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/killtheliterate/ripetoripeto.git"
+  },
+  "author": "Garrett Dawson <killtheliterate@gmail.com> (http://thedrearlight.com/)",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/killtheliterate/ripetoripeto/issues"
+  },
+  "homepage": "https://github.com/killtheliterate/ripetoripeto#readme",
+  "dependencies": {
+    "neutrino": "^7.1.2",
+    "neutrino-preset-react": "^7.1.2"
+  }
+}
