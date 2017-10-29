@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+# Delete `yarn build` artifacts.
+
+# @see: http://bit.ly/2za2t55
+shopt -s nullglob dotglob
+files=(dist/*)
+
+if [ ${#files[@]} -gt 0 ]; then
+  rm dist/*
+  echo Cleaned out dist
+fi

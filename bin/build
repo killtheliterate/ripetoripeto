@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+const argv = require('yargs').argv
+
+require('dotenv').config({ path: argv.env || '.env' })
+
+const webpack = require('webpack')
+const config = require('../config/webpack.config')
+
+process.on('unhandledRejection', err => {
+  throw err
+})
+
+const compiler = webpack(config)
+
+compiler.run(err => {
+  if (err) {
+    Promise.reject(err)
+  } else {
+    console.log('Built artifacts')
+  }
+})

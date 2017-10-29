@@ -1,0 +1,95 @@
+{
+  "name": "ripetoripeto",
+  "version": "0.0.1",
+  "description": "Another repeaterbook clone",
+  "main": "index.js",
+  "license": "GPL-3.0",
+  "scripts": {
+    "build": "./bin/clean && ./bin/build",
+    "dev": "npx webpack-dev-server --hot --config config/webpack.config.dev.js",
+    "lint": "npx eslint src",
+    "prepush": "echo Add prepush checks",
+    "test": "npx jest"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}"
+    ],
+    "setupFiles": [
+      "./config/jest.setup.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "transform": {
+      "^.+\\.(js|jsx)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.css$": "<rootDir>/config/jest.css-transform.js",
+      "^(?!.*\\.(js|jsx|css|json)$)": "<rootDir>/config/jest.file-transform.js"
+    }
+  },
+  "dependencies": {
+    "array-includes": "^3.0.3",
+    "array.from": "^1.0.3",
+    "array.prototype.find": "^2.0.4",
+    "babel-polyfill": "^6.26.0",
+    "classnames": "^2.2.5",
+    "debug": "^3.1.0",
+    "dotenv": "^4.0.0",
+    "object-assign": "^4.1.1",
+    "promise": "^8.0.1",
+    "raven-js": "^3.19.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "react-transition-group": "^2.2.1",
+    "redux": "^3.7.2",
+    "redux-persist": "^5.1.0",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "enzyme": "^3.1.0",
+    "enzyme-adapter-react-16": "^1.0.2",
+    "enzyme-to-json": "^3.1.4",
+    "eslint": "^4.9.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-config-standard-react": "^5.0.0",
+    "eslint-plugin-react": "^7.4.0",
+    "extract-text-webpack-plugin": "^3.0.1",
+    "file-loader": "^1.1.5",
+    "husky": "^0.14.3",
+    "import-glob-loader": "^1.1.0",
+    "jest": "^21.2.1",
+    "node-sass": "^4.5.3",
+    "postcss-flexbugs-fixes": "^3.2.0",
+    "postcss-loader": "^2.0.8",
+    "raf": "^3.4.0",
+    "react-test-renderer": "^16.0.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.3",
+    "webpack-manifest-plugin": "^1.3.2",
+    "workbox-webpack-plugin": "^2.1.0",
+    "yargs": "^10.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/killtheliterate/ripetoripeto.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/killtheliterate/ripetoripeto/issues"
+  },
+  "homepage": "https://github.com/killtheliterate/ripetoripeto#readme"
+}
